@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar opción - Carta Elegante</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f3e5ab;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #5d4037;
+        }
+
+        /* Diseño de la carta */
+        .carta {
+            background-color: #fff;
+            width: 700px;
+            padding: 50px;
+            border-radius: 25px;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+            border: 2px solid #d6a756; /* Borde dorado envejecido */
+            background: linear-gradient(to right, #fffcf0, #f0e4d7); /* Degradado de tonos cálidos */
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Decoración superior de la carta */
+        .carta::before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 20px;
+            background: url('https://i.imgur.com/mXZizkq.png') repeat-x;
+        }
+
+        .carta h1 {
+            font-size: 35px;
+            color: #3e2723;
+            margin-bottom: 30px;
+            font-family: 'Merryweather', serif;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            letter-spacing: 2px;
+        }
+
+        .carta h2 {
+            font-size: 24px;
+            color: #8e44ad;
+            font-family: 'Merryweather', serif;
+            margin-top: 30px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin: 30px 0 15px;
+            font-size: 22px;
+            color: #3e2723;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        select {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            border: 2px solid #d6a756;
+            border-radius: 8px;
+            background-color: #fff;
+            color: #3e2723;
+            font-family: 'Georgia', serif;
+            margin-top: 10px;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        select:hover {
+            border-color: #8e44ad;
+            background-color: #f7f2d1; /* Color suave para el hover */
+        }
+
+        /* Contenido de la carta */
+        .contenido {
+            display: none;
+            background-color: #fff;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 10px;
+            border: 1px solid #d6a756;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contenido h3 {
+            font-size: 22px;
+            color: #3e2723;
+        }
+
+        .contenido p {
+            font-size: 18px;
+            color: #5d4037;
+            line-height: 1.6;
+        }
+
+        /* Decoración final */
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #7f8c8d;
+            text-align: center;
+            font-family: 'Georgia', serif;
+            text-transform: uppercase;
+        }
+
+        /* Sombra suave para las secciones */
+        .carta, .contenido {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo para el reproductor de audio */
+        .audio-player {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="carta">
+        <h1>para mi princesa pau</h1>
+        <p>Abre cualquier opcion enojona: </p>
+        
+        <!-- Menú desplegable -->
+        <label for="opciones">Elije cualquier opcion linda:</label>
+        <select id="opciones" onchange="mostrarContenido()">
+            <option value="">reproduce la musica cuando lo leas</option>
+            <option value="opcion1">Una pequeña carta</option>
+            <option value="opcion2">los gatitos todos lindos</option>
+            <option value="opcion3">tus ojos hermosos mvd</option>
+        </select>
+
+        <!-- una pequeña carta 1 -->
+        <div id="contenido-opcion1" class="contenido">
+            <h3>contenido de lectura para ti preciosa</h3>
+            <p>QUERIDA PAULINA< 3: me dijiste que escribiera algo memorable, asi que lo hice. mi recuerdo de la primera vez que te vi o como lo tu lo llamas "nuetro bello click", fue en un live todo cagado de tik tok 
+                estabas viendome como jugaba cualquier clase de juegos y vi tu nombre en el chat con tu foto toda randi de perfil, cuando por fin nos empezamos a hablar bien fue un dia cualquiera para jugar roblox 
+                y nunca me ganaste en vestirse bien, lo recuerdo muy bien que siempre quedabas en 3er lugar, seimpre te tiraba cuando perdias por que era mi forma de llamar tu atencion pero tu solo lo tomabas como broma, 
+                despues de eso te invitaba a ver peliculas para hacercarme mas a ti hasta que por fin empezamos a tener confianza uno con el otro. lo recuerdo muy bien, empezamos a jugar roblox y termino en peliculas 
+                un 20 de septiembre, nos tomamos fotos atetis e incluso me hiciste un simp donde decia "PxA". Hasta en discord me lo puse y cuando me lo quite te enojaste pero como soy hombre que resuelve lo pude resolver, 
+                y cuando por fin decidimos ser virtuales estaba todo bien, me daba mucha cura como intentabas pasarte un juego todo cagado de roblox mientras que yo solo te veia como lo intentabas una y otra vez, ese dia fue 
+                uno de los mejores, hasta que tuvimos una discucion pero como buen hombre que resuelve, te marque estando hasta pedo pero nunca respondiste mi llamada pero ese mensaje que me llego tuyo me dio la señal que 
+                todavia podia arreglar las cosas entre tu y yo y asi fue, gane tu confianza de nuevo pero claro somos virtuales y se que probablemente nunca nos podremos conocer pero igual fue algo lindo compartir sentimientos, 
+                me abri mucho contigo contandote mi pasado y me aconsejaste de ser mejor poersona y gracias a eso supe valorar las pequeñas cosas que tengo en la vida, gracias a ti y se que probablemente nunca o rara vez volvamos a 
+                hablar como antes pero igual fue una linda experiencia estar con una persona como tu sabes, muchas cosas que aportaste a mi vida, aunq las desveladas cuando me iba a la prepa nadie me las quita pero fue una experiencia 
+                que la verdad no me arrepiento de haber pasado, pero de todas formas quiero que sepas que te quiero mucho pau por que se que no te gusta que te llamen paulina niña enojona, buenas noches y descansa.<3
+              </p>
+        </div>
+
+        <!-- los gatitos todos lindos 2 -->
+        <div id="contenido-opcion2" class="contenido">
+            <h3>el sticker de los gatitos todos lindos que hiciste o hicieron como me fascinaba </h3>
+            <p><img src="PxA.jpg" alt=""></p>
+        </div>
+
+        <!-- tus ojos hermosos mvd 3 -->
+        <div id="contenido-opcion3" class="contenido">
+            <h3>mi ojitos lindos como me gustaban esos hermosos ojitos😍</h3>
+            <p><img src="ojitos lidos.jpeg" width="350px" height="600px" alt=""></p>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 Todos los derechos reservados. | Carta formal</p>
+        </div>
+
+        <!-- Reproductor de música (música de fondo predeterminada) -->
+        <div class="audio-player">
+            <audio id="audio" controls autoplay>
+                <source src="music.mp3" type="audio/mp3">
+                reproduce la musica cuando lo leas.
+            </audio>
+        </div>
+
+    <script>
+        function mostrarContenido() {
+            // Obtener la opción seleccionada
+            var seleccion = document.getElementById('opciones').value;
+            
+            // Ocultar todo el contenido
+            document.getElementById('contenido-opcion1').style.display = 'none';
+            document.getElementById('contenido-opcion2').style.display = 'none';
+            document.getElementById('contenido-opcion3').style.display = 'none';
+            
+            // Mostrar el contenido correspondiente a la opción seleccionada
+            if (seleccion === 'opcion1') {
+                document.getElementById('contenido-opcion1').style.display = 'block';
+            } else if (seleccion === 'opcion2') {
+                document.getElementById('contenido-opcion2').style.display = 'block';
+            } else if (seleccion === 'opcion3') {
+                document.getElementById('contenido-opcion3').style.display = 'block';
+            }
+        }
+
+        // Función para cambiar la música cuando el usuario sube un archivo
+        function cambiarMusica() {
+            var archivo = document.getElementById('subir-musica').files[0];
+            var reproductor = document.getElementById('audio');
+            
+            if (archivo) {
+                var url = URL.createObjectURL(archivo);
+                reproductor.src = url;
+                reproductor.play();
+            }
+        }
+    </script>
+</body>
+</html>
